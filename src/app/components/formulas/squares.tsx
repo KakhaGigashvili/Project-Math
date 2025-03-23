@@ -16,7 +16,7 @@ export default () => {
         setbNum(Number(e.target.value))
     }
 
-    const Binomial = aNum ** 2 + 2 *aNum*bNum + bNum**2
+    const Binomial = (aNum - bNum) * (aNum + bNum)
 
     const aDisplay = aNum == 0 ? 'A' : aNum
     const bDisplay = bNum == 0 ? 'B' : bNum
@@ -29,7 +29,7 @@ export default () => {
             <input type="number" placeholder="A" className="num" onChange={selectAnumber} />
             <input type="number" placeholder="B" className="num" onChange={selectBnumber} />
             </div>
-            <p>({aDisplay} + {bDisplay})<sup>2</sup> = {aDisplay}<sup>2</sup> + 2*{aDisplay}*{bDisplay} + {bDisplay}<sup>2</sup> = {Binomial}</p>
+            <p>{aDisplay}<sup>2</sup> - {bDisplay}<sup>2</sup> = ({aDisplay} - {bDisplay}) * ({aDisplay} + {bDisplay}) = <span>{Binomial}</span></p>
         </div>
         </>
     )

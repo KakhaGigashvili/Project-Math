@@ -3,18 +3,30 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    border: 1px solid white;
+    border: none;
     padding:  10px;
     border-radius: 10px;
+    width: 500px;
+    background-color: #012E40;
 
     h2{
         text-align: center;
-        font-size: 50px;
+        font-size: 48px;
+        color: #038C65;
     }
 
     p{
         text-align: center;
-        color: yellow;
+        color: #F2C12E;
+        font-size: 24px;
+
+        span{
+            color: #D92525;
+            font-size: 50px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+        }
     }
 }
 
